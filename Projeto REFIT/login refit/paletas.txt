@@ -1,0 +1,82 @@
+paleta 1
+
+#d31900
+#ff6600
+#fff2af
+#7cb490
+#000000
+
+
+paleta 2
+
+#f5dd9d
+#bcc499
+#92a68a
+#7b8f8a
+#506266
+
+
+paleta 3
+
+#f5f5f5
+#d1d1d1
+#767676
+#5a5a5a
+#383838
+#121212
+
+
+paleta 4
+
+#f04155
+#ff823a
+#f2f26f
+#fff7bd
+#95cfb7
+
+
+paleta 5
+#5e6457
+#839074
+#939e78
+#a8a878
+#061013
+#cdcd76
+#97c957
+
+
+paleta 6
+
+#2e3250
+#89a194
+#cfc89a
+#e3bc8b
+#cc883a
+#c94a14
+
+
+paleta 7
+
+#f5e3ae
+#fff5d6
+#e1e6d3
+#b1ccc4
+#4e5861
+
+
+paleta 8
+
+#e3bc8b
+#b69368
+#8a6a45
+#5d4123
+#311800
+
+
+paleta 9
+
+#c5b89f
+#feffd4
+#9e2d4a
+#450b1e
+#21000f

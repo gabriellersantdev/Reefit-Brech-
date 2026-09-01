@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link id="link" rel="stylesheet" href="login1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="logo_form"><img src="imagens/Logo1.png"></div>
+            <p>login</p>
+
+            <form id="formulario" action="#">
+                    <input type="text" id="user" placeholder="example@gmail.com"></inout>
+                    <br>
+                    <input type="password" id="pass" placeholder="senha" maxlength="8"></inout>
+                    <p id="aviso"></p>
+                    <br>
+                    <center><a href="#">Esqueci Minha Senha</a></center>
+                    <br>
+                    <center>
+                    <div class="lembrar">
+                        <label for="checkbox">Lembrar de mim</label>
+                        <div class="checkbox-wrapper-23">
+                            <input type="checkbox" id="check-23"/>
+                            <label for="check-23" style="--size: 20px">
+                                <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    </center>
+                    <center><button type="submit">Entrar</button></center>
+                    <p id="hr">_________________________</p>
+                    <center><button class="button"><img src="imagens/Google2.jpg" alt="google"><p>Login with Google</p></button></center>
+                </form>
+                
+        </div>
+    </div>
+    </div>
+    <footer>
+        <button class="footButton" id="footButton1" data-valor="2"><img src="imagens/Logo2.png"></button>
+        <button class="footButton" id="footButton2" data-valor="3"><img src="imagens/Logo3.png"></button>
+    </footer>
+
+<script>
+    const formulario = document.getElementById('formulario');
+    const aviso = document.getElementById('aviso');
+
+    formulario.addEventListener('submit', function(event){event.preventDefault();
+    
+        
+    const user = document.getElementById('user').value.trim();
+    const senha = document.getElementById('pass').value.trim();
+
+    if(user == '' || senha.lenght < 8){
+        aviso.innerText = "usuáio ou senha inválida"
+    }else{
+        aviso.innerText = ""
+        window.location.href = "home.html";
+    }
+    });
+
+
+    const logoForm = document.getElementById("logo_form");
+    const variar = document.getElementById("link");
+    const btn1 = document.getElementById("footButton1");
+    const btn2 = document.getElementById("footButton2");
+
+    btn1.addEventListener("click", () => troca(btn1.dataset.valor));
+    btn2.addEventListener("click", () => troca(btn2.dataset.valor));
+
+    function troca(opcao) {
+        switch (opcao) {
+            case "1":
+                logoForm.innerHTML = "<img src='imagens/Logo1.png'>";
+                variar.href = "login1.css";
+                
+                btn1.innerHTML = "<img src='imagens/Logo2.png'>";
+                btn1.dataset.valor = "2";
+                
+                btn2.innerHTML = "<img src='imagens/Logo3.png'>";
+                btn2.dataset.valor = "3";
+                break;
+
+            case "2":
+                logoForm.innerHTML = "<img src='imagens/Logo2.png'>";
+                variar.href = "login2.css";
+                
+                btn1.innerHTML = "<img src='imagens/Logo1.png'>";
+                btn1.dataset.valor = "1";
+                
+                btn2.innerHTML = "<img src='imagens/Logo3.png'>";
+                btn2.dataset.valor = "3";
+                break;
+
+            case "3":
+                logoForm.innerHTML = "<img src='imagens/Logo3.png'>";
+                variar.href = "login3.css";
+                
+                btn1.innerHTML = "<img src='imagens/Logo1.png'>";
+                btn1.dataset.valor = "1";
+                
+                btn2.innerHTML = "<img src='imagens/Logo2.png'>";
+                btn2.dataset.valor = "2";
+                break;
+        }
+    }
+</script>
+</body>
+</html>
