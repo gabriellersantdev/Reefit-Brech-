@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sacola</title>
+    <link rel="stylesheet" href="stylesacola.css">
+</head>
+
+<body>
+  
+  1
+  <header>
+    <img src="/GTIHUB/Logo1.png" width="140" height="90">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sacola.html" class="active">Sacola (<span class="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+ 
+  <main class="cart-container">
+    <h1>Sua Sacola</h1>
+
+    <div class="cart-layout">
+      
+      
+      <section class="cart-items" id="cartItemsContainer">
+        
+      </section>
+
+      <aside class="cart-summary">
+        <h2>Resumo do Pedido</h2>
+        
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotalDisplay">R$ 0,00</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Frete</span>
+          <span class="free-shipping">Calcular</span>
+        </div>
+
+        <div class="coupon-box">
+          <input type="text" placeholder="Cupom de desconto">
+          <button class="apply-btn">Aplicar</button>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <span id="totalDisplay">R$ 0,00</span>
+        </div>
+
+        <button class="checkout-btn">Finalizar Compra</button>
+        
+        <p class="security-info">🔒 Pagamento 100% Seguro & Envio Ecológico</p>
+      </aside>
+
+    </div>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2026 Brechó Garimpo — Moda Sustentável & Atemporal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
