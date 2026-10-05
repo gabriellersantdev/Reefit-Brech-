@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <link id="link" rel="stylesheet" href="home4.css">
+</head>
+<body>
+    <header>
+        <button id="voltar" onclick="history.back()"></button>
+        <div id="logoImg"><img class="logo" src="imagens/Logo4.png"></div>
+    </header>
+    <article>
+        <p id="pdecima">Usuário:</p>
+        <div id="imgPerfil"></div>
+        <div id="info">
+            <p>Nome:</p>
+            <input type="text" class="campos" id="userName">
+            <br>
+            <p>Email:</p>
+            <input type="text" class="campos" id="Email">
+            <br>
+            <p>Telefone:</p>
+            <input type="text" class="campos" id="Telefone">
+            <br>
+        </div>
+        <div id="botoes">
+            <button id="aplicar" class="botao">Aplicar Alterações</button>
+            <button id="cancelar" class="botao">Cancelar</button>
+        </div>
+        <select name="escolherTema" id="escolherTema">
+            <option value="4">Tema 4</option>
+            <option value="3">Tema 3</option>
+            <option value="2">Tema 2</option>
+            <option value="1">Tema 1</option>
+        </select>
+
+
+    <script>
+        const link = document.getElementById("link");
+        const escolha = document.getElementById("escolherTema");
+        const aplicar = document.getElementById("aplicar");
+        const logo = document.getElementById("logoImg");
+
+        aplicar.addEventListener('click', () => {
+            
+            const tema = escolha.value;
+            aplica(tema);
+        });
+
+        function aplica(tema){
+        switch (tema){
+            case "1":
+                link.href = "home1.css";
+                logo.innerHTML ='<img class="logo" src="imagens/Logo1.png">';
+            break;
+            case "2":
+                link.href = "home2.css";
+                logo.innerHTML ='<img class="logo" src="imagens/Logo2.png">';
+            break;
+            case "3":
+                link.href = "home3.css";
+                logo.innerHTML ='<img class="logo" src="imagens/Logo3.png">';
+            break;
+            case "4":
+                link.href = "home4.css";
+                logo.innerHTML ='<img class="logo" src="imagens/Logo4.png">';
+            break;
+        }}
+    </script>
+</body>
+</html>
