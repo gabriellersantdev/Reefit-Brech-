@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/Logo4.png"  width="130">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="#catalogo">Garimpos</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <a href="sacola.html">
+      <button class="cart-btn" id="cartBtn">Sacola (0)</button>
+    </a>
+    <button id="perfil"><a href="home.html"><img src="imagens/perfil.png"></a></button>
+
+  </header>
+
+  <section class="hero" id="inicio">
+    <p>Roupas vintage, peças atemporais e consumo consciente.</p>
+    <button class="cta-btn" id="ctaBtn">Explorar Coleção</button>
+  </section>
+
+  <section class="catalog" id="catalogo">
+    <h2>Últimos Garimpos</h2>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <center><img src="imagens/roupa.png"  width="300" height="300"></center>
+        <div class="product-info">
+          <div class="product-title">Saia Jeans</div>
+          <div class="product-tag">Tamanho M</div>
+          <div class="product-price">R$ 89,00</div>
+          <a href="sacola.html"><button class="add-cart-btn" data-product="Jaqueta Jeans Oversized">Adicionar à Sacola</button></a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <a href="produto.html">
+          <center><img src="imagens/roupa2.png"  width="300" height="300"></center>
+          <div class="product-info">
+            <div class="product-title">Moletom Azul Marinho</div>
+            <div class="product-tag">Tamanho G</div>
+            <div class="product-price">R$ 120,00</div>
+          </a>
+          <a href="sacola.html"><button class="add-cart-btn" data-product="Bolsa Retro em Couro">Adicionar à Sacola</button></a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <center><img src="imagens/roupa1.png"  width="300" height="300"></center>
+        <div class="product-info">
+          <div class="product-title">Bolsa Vermelha Vintage</div>
+          <div class="product-tag">Peça Única</div>
+          <div class="product-price">R$ 250,00</div>
+          <a href="sacola.html"><button class="add-cart-btn" data-product="Camisa Estampada Vintage">Adicionar à Sacola</button></a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <center><img src="imagens/roupa3.png"  width="300" height="300"></center>
+        <div class="product-info">
+          <div class="product-title">Jaqueta Jeans</div>
+          <div class="product-tag">Tamanho M</div>
+          <div class="product-price">R$ 230,00</div>
+          <a href="sacola.html"><button class="add-cart-btn" data-product="Camisa Estampada Vintage">Adicionar à Sacola</button></a>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <center><img src="imagens/roupa4.png"  width="300" height="300"></center>
+        <div class="product-info">
+          <div class="product-title">Camisa De Bandanas</div>
+          <div class="product-tag">Tamanho P</div>
+          <div class="product-price">R$ 10</div>
+          <a href="sacola.html"><button class="add-cart-btn" data-product="Camisa Estampada Vintage">Adicionar à Sacola</button></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 ReFit — Moda Sustentável & Atemporal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

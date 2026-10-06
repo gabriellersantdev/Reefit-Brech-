@@ -1,0 +1,114 @@
+*{
+    transition: 250ms;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f7f4ef;
+    justify-items: center;
+}
+header{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #1b2a4a;
+    position: sticky;
+    width: 100%;
+    height: 115px;
+}
+#voltar{
+    position: absolute;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: #f7f4ef;
+    mask-image: url(imagens/volta.png);
+    mask-size: contain;
+    border: none;
+}
+.logo{
+    height: 100px;
+}
+article{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 100px;
+    background-color: #1b2a4a;
+    width: 550px;
+    height: 650px;
+}
+#pdecima{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#imgPerfil{
+    margin-bottom: 15px;
+    border: #f5f5f5 solid;
+    border-radius: 200px;
+    border-width: 3px;
+    width: 120px;
+    height: 120px;
+    background-image: url(imagens/perfil.png);
+    background-size: contain;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+}
+p{
+color: #f7f4ef;
+}
+.campos{
+    background-color: #0a182e;
+    border-radius: 8px;
+    border: solid 2px;
+    border-color: #d8c4b6;
+    margin: 12px;
+    padding: 2px;
+    color: #f5f5f5;
+    width: 200px;
+}
+#botoes{
+    display: flex;
+    gap: 40px;
+}
+.botao{
+    border-color: #d8c4b6;
+    background-color: #0a182e;
+    color: #d8c4b6;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 25px;
+    border-style: solid;
+}
+.botao:active{
+    transition: 85ms;
+    color: #f7f4ef;
+    border-color: #f7f4ef;
+}
+#escolherTema{
+    border-color: #d8c4b6;
+    background-color: #0a182e;
+    color: #d8c4b6;
+    border-radius: 8px;
+    padding: 5px;
+    border-style: solid;
+    margin: 50px;
+}
+#escolherTema:hover{
+    transition: 150ms;
+    border-width: 2px;
+    border-color: #f7f4ef;
+    color: #f7f4ef;
+}
+#escolherTema:focus{
+    outline: none;
+}
+input:focus-visible{
+    border: solid 2px #f7f4ef;
+    outline: none;
+}

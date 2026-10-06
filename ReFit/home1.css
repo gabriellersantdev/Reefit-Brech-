@@ -1,0 +1,112 @@
+*{
+    transition: 250ms;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e3bc8b;
+    justify-items: center;
+}
+header{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #5d4123;
+    position: sticky;
+    width: 100%;
+    height: 115px;
+}
+#voltar{
+    position: absolute;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: #e3bc8b;
+    mask-image: url(imagens/volta.png);
+    mask-size: contain;
+    border: none;
+}
+.logo{
+    width: 130px;
+}
+article{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 100px;
+    background-color: #5d4123;
+    width: 550px;
+    height: 650px;
+}
+#pdecima{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#imgPerfil{
+    margin-bottom: 15px;
+    border: #e3bc8b solid;
+    border-radius: 200px;
+    border-width: 3px;
+    width: 120px;
+    height: 120px;
+    background-image: url(imagens/perfil.png);
+    background-size: contain;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+}
+p{
+color: #e3bc8b;
+}
+.campos{
+    background-color: #8a6a45;
+    border-radius: 8px;
+    border: solid 2px;
+    border-color: #e3bc8b;
+    margin: 12px;
+    padding: 2px;
+    color: #e3bc8b;
+    width: 200px;
+}
+#botoes{
+    display: flex;
+    gap: 40px;
+}
+.botao{
+    border-color: #e3bc8b;
+    background-color: #5d4123;
+    color: #e3bc8b;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 25px;
+    border-style: solid;
+}
+.botao:active{
+    transition: 85ms;
+    color: #a51313;
+    border-color: #a51313;
+}
+#escolherTema{
+    border-color: #e3bc8b;
+    background-color: #5d4123;
+    color: #e3bc8b;
+    border-radius: 8px;
+    padding: 5px;
+    border-style: solid;
+    margin: 50px;
+}
+#escolherTema:hover{
+    transition: 150ms;
+    border-width: 2px;
+}
+#escolherTema:focus{
+    outline: none;
+}
+input:focus-visible{
+    border: solid 2px #a51313;
+    outline: none;
+}
